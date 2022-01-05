@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+    Name: Sweetlana Protsenko
+    Date created: Jan 05, 2022
+-->
+<html lang="en">
+
+<head>
+    <title>Restaurant</title>
+</head>
+
+<body>
+    <main>
+        <h1>The World on a Plate</h1>
+        <hr />
+        <!--links to Contacts and Menue-->
+        <a href="index.html" style="margin-right: 50px;">Home</a><a href="menu.html"
+            style="margin-right: 50px;">Menu</a><a href="contacts.html">Contact Us</a>
+        <hr />
+        <form action="submit.html" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"/><br />
+
+            <label for="email">Email:</label>
+            <input type="text id="email" name="email" style="margin-top: 20px;" /><br />
+
+            <label for="phoneNumber">Phone:</label>
+            <input type="text" id="phoneNumber" name="phoneNumber" style="margin-top: 20px;"/><br />
+
+            <!--Select reason for inquiry section-->
+            <label for="inquiry" >Reason for Inquiry:</label>
+            <select id="inquiry" name="inquiry" style="margin-top: 20px;">
+                <option value="default" selected>Catering</option>
+                <option value="privateParty">Private Party</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">Other</option>
+            </select><br />
+            
+            <!--Additional Information section-->
+            <label for="info">Additional Information</label>
+            <textarea id="info" name="info" style="margin-top: 20px;"></textarea><br />
+
+            <!--Visit info section/radio buttons -->
+            <label for="visit">Have you been to the restaurant?</label>
+            <input type="radio" id="choice1" name="visit" value="yes" style="margin-top: 20px;" >
+            <label for="choice1" >Yes</label>
+            <input type="radio" id="choice2" name="visit" value="no">
+            <label for="choice2">No</label><br />
+
+            <!--Contact days section-->
+            <label for="day">The best days to contact you:</label>
+            <input type="checkbox" id="choiceM" name="day" value="m" style="margin-top: 20px;">
+            <label for="choiceM">M</label>
+            <input type="checkbox" id="choiceT" name="day" value="t" >
+            <label for="choiceT">T</label>
+            <input type="checkbox" id="choiceW" name="day" value="w">
+            <label for="choiceW">W</label>
+            <input type="checkbox" id="choiceTh" name="day" value="th" >
+            <label for="choiceTh">Th</label>
+            <input type="checkbox" id="choiceF" name="day" value="f">
+            <label for="choiceF">F</label>
+        </form>
+        <footer>
+            <hr />
+            <p>585 Mcleod Trail SW, Calgary, AB, Canada, T5D2W3 <br /> phone: <a>403-414-1441</a></p>
+            <hr />
+        </footer>
+    </main>
+</body>
+</html>
