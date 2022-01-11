@@ -9,26 +9,47 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Restaurant</title>
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <script src="js/bootstrap.min.js"></script>
         <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+        <style>
+            .img-fluid{max-width: 100%\9;
+                height: auto;}
+            img {margin-left: 25%;}
+            
+        </style>
         
     </head>
     <body>
         <div class="container">
-        <main>            
-            <h1>The World on a Plate</h1>
-            <hr />
-            <!--links to Contacts and Menue-->
-            <a href="index.html" style="margin-right: 50px;">Home</a><a href="menu.html" style="margin-right: 50px;">Menu</a><a href="contacts.html">Contact Us</a>
-            <hr />
+        <main> 
+            <header>
+                <h1>The World on a Plate</h1>
+
+            </header>           
+            <nav>
+                
+                <!--links to Contacts and Menue-->
+                <a class="btn badge-pill" href="index.html" style="margin-right: 50px;">Home</a>
+                <a class="btn badge-pill" href="menu.html" style="margin-right: 50px;">Menu</a>
+                <a class="btn badge-pill" href="contacts.html">Contact Us</a>
+               
+            </nav>
             <!--Section of reataurant description-->
-            <article>                
-                <img src="images/Manty400-150px.jpg" class="rounded" alt="photo of manty" style="width: 400px;" />
-                <p>In our restaurant you will find your favorire food from all around the world. No need to buy expencive tickets and fly to the end of the Earth<br /> to taste something new or special from far far away. Just come to The World on a Plate and enjoy <strong>all the best</strong> from world wide cuisine.<br/> Dive in your memories or feel free to fly following your fantasy. We are here to present you a bourderless taste of the world <strong>on your plate</strong>.</p>
+            <article>  
+                <div class="clearfix">
+                    <div class="align-content-centers">             
+                        <img src="images/Manty400-150px.jpg" class="img-fluid" alt="photo of manty" style="width: 400px;" />
+                        <p>In our restaurant you will find your favorire food from all around the world. No need to buy expencive tickets and fly to the end of the Earth<br /> to taste something new or special from far far away. Just come to The World on a Plate and enjoy <strong>all the best</strong> from world wide cuisine.<br/> Dive in your memories or feel free to fly following your fantasy. We are here to present you a bourderless taste of the world <strong>on your plate</strong>.</p>
+                    </div>
+                </div>
+                
+          
+            
             </article>
             <footer>
-                <hr />
+                
                 <p>585 Mcleod Trail SW, Calgary, AB, Canada, T5D2W3 <br /> phone: <a>403-577-3241</a></p>
-                <hr />
+               
             </footer>
         </main>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
