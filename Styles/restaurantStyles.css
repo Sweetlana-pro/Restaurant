@@ -3,8 +3,34 @@ Creator: Sweetlana Protsenko
 Date created: Jan 9,2022
 Date last modified:
 */
+h4 {
+  background-color: #f4a259;
+  text-align: center;
+  color: #474b49;
+  font: bold;
+}
+@keyframes grow {
+  0% {
+    font-size: 0;
+  }
+  100% {
+    font-size: 50px;
+  }
+}
 
-header,
+.grows {
+  animation-name: grow;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+header {
+  height: 15%;
+  background-color: #f4a259;
+  padding: 8px;
+  text-align: center;
+}
+
 footer {
   background-color: #f4a259;
   color: #5b8e7d;

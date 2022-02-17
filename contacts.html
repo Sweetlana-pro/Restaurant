@@ -27,8 +27,14 @@
 
 <body>
     <main>
-        <header>
-            <h1>The World on a Plate</h1>
+        <header class="container">
+            <h1><i class="fas fa-bacon"></i>The World on a Plate<i class="fas fa-bacon"></i></h1>
+            <h4><strong> Restarant of international cuisine</strong></h4>
+            <h1 class="grows" style="color:darkred"> We are opening a new location!</h1>
+            <p><a target="_blank"
+                    href="https://www.google.com/maps/place/Avenida+Place+Shopping+Centre/@50.9469602,-114.0727271,16.75z/data=!3m1!5s0x537176b7c60bb837:0xa2b586ce64b092bc!4m8!1m2!2m1!1sMacleod+Trail,+Southeast+Calgary,+Calgary,+AB!3m4!1s0x537176b81f7bb947:0xf10eec7868c80e8b!8m2!3d50.9455261!4d-114.0693246">1245
+                    24 Street SW, Calgary, AB, Canada, T5O2W1</a><br />
+                phone: 403-577-3241 </p>
         </header>
         <nav>
 
@@ -39,13 +45,11 @@
             <a class="btn badge-pill" href="contacts.html">Contact Us</a>
 
         </nav>
-        <form name="contactForm" class="needs-validation" onsubmit="return validate();" novalidate>
+        <form name="contactForm" action="/validate.js" onsubmit="return validate()" method="post" novalidate>
             <div class="form-group col">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required />
-                <div class="invalid-feedback">
-                    Name is required.
-                </div>
+                <p id="demo"></p>
             </div><br />
             <div class="form-group col">
                 <label for="email">Email:</label>
