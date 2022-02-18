@@ -1,2 +1,2 @@
 # Restaurant
-A small three-page website for a restaurant. HTML
+Three-pageg website for a restaurant. HTML
